@@ -1,0 +1,19 @@
+{:itonami.blueprint/id "cloud-itonami-crowdfunding-payout"
+ :itonami.blueprint/name "Rewards Crowdfunding — Creator Payout, Holdbacks and Refunds"
+ :itonami.blueprint/domain :crowdfunding/creator-payout
+ :itonami.blueprint/license "AGPL-3.0-or-later"
+ :itonami.blueprint/social-impact [:creator-access :consumer-protection :transparency]
+ :itonami.blueprint/governor :payout-governor
+ :itonami.blueprint/robotics false
+ :itonami.blueprint/required-technologies [:identity :audit-ledger :payments]
+ :itonami.blueprint/optional-technologies []
+ :itonami.blueprint/status :public-oss
+ :itonami.blueprint/maturity :implemented
+ :itonami.blueprint/keying :function
+ :itonami.blueprint/adr "2607268500-crowdfunding-itonami-capability-and-actors"
+ ;; This actor computes allocations and records authorisations. It holds
+ ;; no funds and no keys — kotoba-lang/pay's zero-custody boundary is
+ ;; preserved all the way up. Release gates are DERIVED from fulfilment
+ ;; records, never asserted by a proposal.
+ :itonami.blueprint/custodial false
+ :itonami.blueprint/adjudicating false}
