@@ -2,7 +2,7 @@
   "Offline demo: compute a payout, watch an unverified destination and an
   unmet gate block a release, release the first tranche with a human's
   approval, and see what a refund would actually cost.
-  `clojure -M:dev:run`."
+  `kbb -M:dev:run`."
   (:require [langgraph.graph :as g]
             [payoutops.operation :as operation]
             [payoutops.store :as store]))
