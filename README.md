@@ -72,9 +72,9 @@ actor.
 ## Run it
 
 ```bash
-clojure -M:dev:run     # offline demo: a conserving plan, refusals, a human-gated release, a refund's true cost
-clojure -M:dev:test    # 28 tests
-clojure -M:lint
+kbb -M:dev:run     # offline demo: a conserving plan, refusals, a human-gated release, a refund's true cost
+kbb -M:dev:test    # 28 tests
+kbb -M:lint
 ```
 
 ## Licence
